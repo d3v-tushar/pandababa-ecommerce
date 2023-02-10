@@ -48,12 +48,54 @@ const Navbar = () => {
             <div className="w-full"><div className="flex items-baseline"><p className="flex"><span className="text-2xl"><BiCategory/></span> Categories</p><p><IoIosArrowDown/></p></div></div>
         </div>
         <div className="col-span-4 flex justify-evenly">
-            <button className="mx-2 px-3">Home <IoIosArrowDown /></button>
-            <button className="mx-2 px-3">Mega Menu <IoIosArrowDown /></button>
-            <button className="mx-2 px-3">Full Screen Menu <IoIosArrowDown /></button>
-            <button className="mx-2 px-3">Pages <IoIosArrowDown/></button>
-            <button className="mx-2 px-3">User Account <IoIosArrowDown /></button>
-            <button className="mx-2 px-3">Vendor Account <IoIosArrowDown /></button>
+            <button className="mx-4">
+              <p className="flex justify-center items-center">
+                  <span>Home</span>
+                  <span className="mt-3 mb-2 ml-2 text-sm">
+                    <IoIosArrowDown />
+                  </span>
+              </p>
+            </button>
+            <button className="mx-4">
+            <p className="flex justify-center items-center">
+                  <span>Mega Menu</span>
+                  <span className="mt-3 mb-2 ml-2 text-sm">
+                    <IoIosArrowDown />
+                  </span>
+              </p>
+            </button>
+            <button className="mx-4">
+            <p className="flex justify-center items-center">
+                  <span>Full Screen View</span>
+                  <span className="mt-3 mb-2 ml-2 text-sm">
+                    <IoIosArrowDown />
+                  </span>
+              </p>
+            </button>
+            <button className="mx-4">
+            <p className="flex justify-center items-center">
+                  <span>Pages</span>
+                  <span className="mt-3 mb-2 ml-2 text-sm">
+                    <IoIosArrowDown />
+                  </span>
+              </p>
+            </button>
+            <button className="mx-4">
+            <p className="flex justify-center items-center">
+                  <span>User Account</span>
+                  <span className="mt-3 mb-2 ml-2 text-sm">
+                    <IoIosArrowDown />
+                  </span>
+              </p>
+            </button>
+            <button className="mx-4">
+            <p className="flex justify-center items-center">
+                  <span>Vendor Account</span>
+                  <span className="mt-3 mb-2 ml-2 text-sm">
+                    <IoIosArrowDown />
+                  </span>
+              </p>
+            </button>
         </div>
       </div>
     </div>
