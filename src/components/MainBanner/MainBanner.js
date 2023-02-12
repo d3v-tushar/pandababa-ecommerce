@@ -6,7 +6,7 @@ import bannerimg3 from "../../assets/banner/banner-17.jpg";
 
 const MainBanner = () => {
   return (
-    <section className="w-4/5 mx-auto my-5">
+    <section className="my-5">
       <div className="grid grid-cols-4">
         <div className="col-span-3 rounded-sm shadow-md bg-inherit relative">
           <img className="" src={bannerimg} alt="" />
