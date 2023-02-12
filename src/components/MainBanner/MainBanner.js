@@ -6,9 +6,9 @@ import bannerimg3 from "../../assets/banner/banner-17.jpg";
 
 const MainBanner = () => {
   return (
-    <section className="my-5">
+    <section className="mt-5 mb-10">
       <div className="grid grid-cols-4">
-        <div className="col-span-3 rounded-sm shadow-md bg-inherit relative">
+        <div className="col-span-3 rounded-sm shadow-sm bg-inherit relative">
           <img className="" src={bannerimg} alt="" />
           <div class="absolute top-[25%] left-20 uppercase text-left text-gray-900">
             <h4 class="text-3xl font-normal mb-1">Lifestyle collection</h4>
@@ -29,7 +29,7 @@ const MainBanner = () => {
           </div>
         </div>
         <div className="col-span-1 grid grid-cols-1 gap-y-4 items-stretch pl-4">
-          <div className="relative w-full flex items-stretch shadow-md">
+          <div className="relative w-full flex items-stretch shadow-sm">
             <img className="w-fit" src={bannerimg3} alt="" />
             <div class="absolute top-[25%] left-8 text-left">
               <p class="text-sm font-normal">NEW ARRIVALS</p>
@@ -49,7 +49,7 @@ const MainBanner = () => {
             </div>
           </div>
 
-          <div className="relative w-full flex items-stretch shadow-md">
+          <div className="relative w-full flex items-stretch shadow-sm">
             <img className="w-full" src={bannerimg2} alt="" />
             <div class="absolute top-[25%] left-8 text-left">
               <p class="text-sm font-normal">GAMING 4K</p>

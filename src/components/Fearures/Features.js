@@ -6,7 +6,7 @@ import { GoCreditCard } from "react-icons/go";
 
 const Features = () => {
     return (
-        <div className='bg-white grid grid-cols-4 py-5 shadow-md'>
+        <div className='bg-white grid grid-cols-4 py-5 shadow-sm'>
             <div className='flex justify-center items-center border-r-2'>
                 <div className='text-[40px] mx-4'><TbTruckDelivery/></div>
                 <div className='text-left leading-5 mb-2'>

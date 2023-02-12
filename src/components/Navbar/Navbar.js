@@ -8,7 +8,7 @@ import { BiCategory } from "react-icons/bi";
 
 const Navbar = () => {
   return (
-    <div className="bg-white pt-5 pb-3">
+    <div className="bg-white pt-5 pb-3 shadow-sm">
       <nav className="w-full lg:w-4/5 grid grid-cols-5 justify-between mx-auto align-middle items-center">
         <div className="col-span-1">
           <img src={logo} alt="" />

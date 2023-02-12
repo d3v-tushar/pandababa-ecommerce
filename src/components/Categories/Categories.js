@@ -34,7 +34,7 @@ const Categories = () => {
     },
   ];
   return (
-    <div className="grid grid-cols-6 gap-x-4 my-12">
+    <div className="grid grid-cols-6 gap-x-4 my-12 shadow-sm">
       {homeCategories.map((catetory, index) => (
         <div key={index} className="group relative overflow-hidden cursor-pointer rounded-md w-full h-full">
           <img
