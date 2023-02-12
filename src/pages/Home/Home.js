@@ -1,5 +1,6 @@
 import React from 'react';
 import Categories from '../../components/Categories/Categories';
+import DealsOfTheDay from '../../components/DealsOfTheDay/DealsOfTheDay';
 import Features from '../../components/Fearures/Features';
 import MainBanner from '../../components/MainBanner/MainBanner';
 
@@ -9,6 +10,7 @@ const Home = () => {
             <MainBanner/>
             <Features/>
             <Categories/>
+            <DealsOfTheDay/>
         </div>
     );
 };
