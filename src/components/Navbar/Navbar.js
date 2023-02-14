@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import logo from "../../assets/logo.svg";
 import { BiSearchAlt } from "react-icons/bi";
 import { CgProfile } from "react-icons/cg";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import { IoIosArrowDown } from "react-icons/io";
 import { BiCategory } from "react-icons/bi";
+import { cartData } from "../../layouts/Main/Main";
 
 const Navbar = () => {
+  const {open, setOpen} = useContext(cartData);
   return (
     <div className="bg-white pt-5 pb-3 shadow-sm">
       <nav className="w-full lg:w-4/5 grid grid-cols-5 justify-between mx-auto align-middle items-center">
@@ -35,7 +37,7 @@ const Navbar = () => {
           <button className="text-2xl p-2 m-1 bg-gray-100 rounded-full">
             <CgProfile />
           </button>
-          <button className="text-2xl p-2 m-1 bg-gray-100 rounded-full">
+          <button onClick={() => setOpen(!open)} className="text-2xl p-2 m-1 bg-gray-100 rounded-full">
             <HiOutlineShoppingBag />
           </button>
         </div>
@@ -43,9 +45,15 @@ const Navbar = () => {
 
       {/* {Navbar 2nd Row} */}
       <div className="flex mt-6 justify-between w-full lg:w-4/5 mx-auto">
-        <div className="mx-2 bg-gray-100">
-            {/* <div><button className="pr-12"><div className="flex items-baseline"><p className="flex"><span className="text-2xl"><BiCategory/></span> Categories</p><p><IoIosArrowDown/></p></div></button></div> */}
-            <div className="w-full"><div className="flex items-baseline"><p className="flex"><span className="text-2xl"><BiCategory/></span> Categories</p><p><IoIosArrowDown/></p></div></div>
+        <div className="mx-2 bg-gray-100 rounded-md">
+            <div className="flex text-lg justify-between items-baseline">
+              <p className="flex items-center">
+              <span className="mx-1"><BiCategory/></span>
+              <span className="mx-1">Categories</span>
+              </p>
+              <span className="ml-8 mr-1 mt-2"><IoIosArrowDown/></span>
+            </div>
+            {/* <CategoryDropDown/> */}
         </div>
         <div className="col-span-4 flex justify-evenly">
             <button className="mx-4">
