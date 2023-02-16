@@ -10,7 +10,7 @@ const DealsOfTheDay = () => {
                 <div>
                 <a className="text-sm font-semibold" href="/market-2#">
                 <p className="flex justify-center items-center">
-                  <span className='text-md'>More Products</span>
+                  <span className='text-md link link-underline link-underline-black text-black'>More Products</span>
                   <span className="mt-3 mb-2 mx-2">
                     <AiOutlineArrowRight />
                   </span>

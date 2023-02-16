@@ -3,13 +3,15 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import bannerimg from "../../assets/banner/banner-15.jpg";
 import bannerimg2 from "../../assets/banner/banner-16.jpg";
 import bannerimg3 from "../../assets/banner/banner-17.jpg";
+import MainSlider from "../MainSlider/MainSlider";
 
 const MainBanner = () => {
   return (
     <section className="mt-5 mb-10">
       <div className="grid grid-cols-4">
         <div className="col-span-3 rounded-sm shadow-sm bg-inherit relative">
-          <img className="" src={bannerimg} alt="" />
+          <MainSlider/>
+          {/* <img className="" src={bannerimg} alt="" />
           <div className="absolute top-[25%] left-20 uppercase text-left text-gray-900">
             <h4 className="text-3xl font-normal mb-1">Lifestyle collection</h4>
             <h1 className="text-6xl font-bold mb-3">Men</h1>
@@ -26,7 +28,7 @@ const MainBanner = () => {
             >
               Shop Now
             </button>
-          </div>
+          </div> */}
         </div>
         <div className="col-span-1 grid grid-cols-1 gap-y-4 items-stretch pl-4">
           <div className="relative w-full flex items-stretch shadow-sm">
