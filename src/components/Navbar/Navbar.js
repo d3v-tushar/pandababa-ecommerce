@@ -4,14 +4,15 @@ import { BiSearchAlt } from "react-icons/bi";
 import { CgProfile } from "react-icons/cg";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import { IoIosArrowDown } from "react-icons/io";
-import { BiCategory } from "react-icons/bi";
+// import { BiCategory } from "react-icons/bi";
 import { cartData } from "../../layouts/Main/Main";
+import CategoryDropDown from "../CategoryDropDown/CategoryDropDown";
 
 const Navbar = () => {
   const {open, setOpen} = useContext(cartData);
   return (
-    <div className="bg-white pt-5 pb-3 shadow-sm">
-      <nav className="w-full lg:w-4/5 grid grid-cols-5 justify-between mx-auto align-middle items-center">
+    <div className="sticky top-0 z-10 bg-white pt-5 pb-3 shadow-sm">
+      <nav className="w-full lg:w-10/12 grid grid-cols-5 justify-between mx-auto align-middle items-center">
         <div className="col-span-1">
           <img src={logo} alt="" />
         </div>
@@ -44,8 +45,8 @@ const Navbar = () => {
       </nav>
 
       {/* {Navbar 2nd Row} */}
-      <div className="flex mt-6 justify-between w-full lg:w-4/5 mx-auto">
-        <div className="mx-2 bg-gray-100 rounded-md">
+      <div className="flex mt-6 justify-between w-full lg:w-10/12 mx-auto">
+        {/* <div className="bg-gray-100 rounded-md">
             <div className="flex text-lg justify-between items-baseline">
               <p className="flex items-center">
               <span className="mx-1"><BiCategory/></span>
@@ -53,9 +54,9 @@ const Navbar = () => {
               </p>
               <span className="ml-8 mr-1 mt-2"><IoIosArrowDown/></span>
             </div>
-            {/* <CategoryDropDown/> */}
-        </div>
-        <div className="col-span-4 flex justify-evenly">
+        </div> */}
+       <div> <CategoryDropDown/></div>
+        <div className="flex justify-evenly">
             <button className="mx-4">
               <p className="flex justify-center items-center">
                   <span>Home</span>
@@ -96,7 +97,7 @@ const Navbar = () => {
                   </span>
               </p>
             </button>
-            <button className="mx-4">
+            <button className="ml-4">
             <p className="flex justify-center items-center">
                   <span>Vendor Account</span>
                   <span className="mt-3 mb-2 ml-2 text-sm">

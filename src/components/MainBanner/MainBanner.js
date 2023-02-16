@@ -10,30 +10,30 @@ const MainBanner = () => {
       <div className="grid grid-cols-4">
         <div className="col-span-3 rounded-sm shadow-sm bg-inherit relative">
           <img className="" src={bannerimg} alt="" />
-          <div class="absolute top-[25%] left-20 uppercase text-left text-gray-900">
-            <h4 class="text-3xl font-normal mb-1">Lifestyle collection</h4>
-            <h1 class="text-6xl font-bold mb-3">Men</h1>
-            <h4 class="text-4xl font-semibold">
-              SALE UP TO <span class="text-red-500">30% OFF</span>
+          <div className="absolute top-[25%] left-20 uppercase text-left text-gray-900">
+            <h4 className="text-3xl font-normal mb-1">Lifestyle collection</h4>
+            <h1 className="text-6xl font-bold mb-3">Men</h1>
+            <h4 className="text-4xl font-semibold">
+              SALE UP TO <span className="text-red-500">30% OFF</span>
             </h4>
-            <p class="text-lg normal-case">
+            <p className="text-lg normal-case">
               Get Free Shipping on orders over $99.00
             </p>
             <button
-              class="bg-gray-900 font-semibold text-white text-xl px-8 py-3 my-3"
+              className="bg-gray-900 font-semibold text-white text-xl px-8 py-3 my-3"
               tabindex="0"
               type="button"
             >
-              Shop Now<span class=""></span>
+              Shop Now
             </button>
           </div>
         </div>
         <div className="col-span-1 grid grid-cols-1 gap-y-4 items-stretch pl-4">
           <div className="relative w-full flex items-stretch shadow-sm">
             <img className="w-fit" src={bannerimg3} alt="" />
-            <div class="absolute top-[25%] left-8 text-left">
-              <p class="text-sm font-normal">NEW ARRIVALS</p>
-              <h4 class="text-xl font-semibold">
+            <div className="absolute top-[25%] left-8 text-left">
+              <p className="text-sm font-normal">NEW ARRIVALS</p>
+              <h4 className="text-xl font-semibold">
                 SUMMER
                 <br />
                 SALE 20% OFF
@@ -51,9 +51,9 @@ const MainBanner = () => {
 
           <div className="relative w-full flex items-stretch shadow-sm">
             <img className="w-full" src={bannerimg2} alt="" />
-            <div class="absolute top-[25%] left-8 text-left">
-              <p class="text-sm font-normal">GAMING 4K</p>
-              <h4 class="text-xl font-semibold">
+            <div className="absolute top-[25%] left-8 text-left">
+              <p className="text-sm font-normal">GAMING 4K</p>
+              <h4 className="text-xl font-semibold">
                 DESKTOPS &
                 <br />
                 LAPTOPS

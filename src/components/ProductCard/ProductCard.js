@@ -8,8 +8,8 @@ const ProductCard = () => {
         <div className='group bg-white border-transparent border-2 border-white hover:border-gray-800 rounded-sm p-4 shadow-sm'>
             <div className='relative overflow-hidden'>
                 <img className='group-hover:scale-125 duration-300' src="https://bazaar.ui-lib.com/_next/image?url=%2Fassets%2Fimages%2Fproducts%2FFashion%2FClothes%2F1.SilverHighNeckSweater.png&w=1920&q=75" alt="" />
-                <button className='absolute top-7 -right-10 transition duration-300 ease-in-out transform delay-150 group-hover:-translate-x-12'><span className='text-gray-500 text-2xl'><AiFillEye/></span></button>
-                <button className='absolute top-14 -right-10 transition duration-500 ease-in-out transform delay-150 group-hover:-translate-x-12'><span className='text-red-500 text-2xl'><AiFillHeart/></span></button>
+                <button className='p-1 rounded-full hover:bg-gray-200 absolute top-7 -right-10 transition duration-300 ease-in-out transform delay-150 group-hover:-translate-x-12'><span className='text-gray-500 text-2xl'><AiFillEye/></span></button>
+                <button className='p-1 rounded-full hover:bg-gray-200 absolute top-16 -right-10 transition duration-500 ease-in-out transform delay-150 group-hover:-translate-x-12'><span className='text-red-500 text-2xl'><AiFillHeart/></span></button>
             </div>
             <div className='leading-8'>
                 <h3 className='text-sm font-semibold text-gray-800'>Silver High Neck Sweater</h3>

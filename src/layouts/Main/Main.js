@@ -9,7 +9,7 @@ const Main = () => {
     const data = {open, setOpen}
     return (
         <cartData.Provider value={data}>
-            <div className='bg-gray-100 min-h-screen'>
+            <div className='bg-gray-100 min-h-screen relative'>
                 <Navbar
                 open={open}
                 setOpen={setOpen}
