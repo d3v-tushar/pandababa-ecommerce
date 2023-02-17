@@ -1,6 +1,7 @@
 import React from 'react';
 import { AiOutlineArrowRight } from "react-icons/ai";
-import ProductCard from '../ProductCard/ProductCard';
+//import ProductCard from '../ProductCard/ProductCard';
+import ProductSlider from '../ProductSlider/ProductSlider';
 
 const DealsOfTheDay = () => {
     return (
@@ -10,7 +11,7 @@ const DealsOfTheDay = () => {
                 <div>
                 <a className="text-sm font-semibold" href="/market-2#">
                 <p className="flex justify-center items-center">
-                  <span className='text-md link link-underline link-underline-black text-black'>More Products</span>
+                  <span className='text-[16px] link link-underline link-underline-black text-black'>More Products</span>
                   <span className="mt-3 mb-2 mx-2">
                     <AiOutlineArrowRight />
                   </span>
@@ -18,10 +19,11 @@ const DealsOfTheDay = () => {
               </a>
                 </div>
             </div>
-            <div className='grid grid-cols-5 gap-x-4'>
-                {
-                   Array.apply(null, Array(5)).map(arr => <ProductCard/>)
-                }
+            <div>
+                {/* {
+                   Array.apply(null, Array(5)).map((arr, index) => <ProductCard key={index}/>)
+                } */}
+                <ProductSlider/>
             </div>
         </section>
     );

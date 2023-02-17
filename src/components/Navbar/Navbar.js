@@ -17,14 +17,14 @@ const Navbar = () => {
           <img src={logo} alt="" />
         </div>
         <div className="relative col-span-3">
-          <label class="flex overflow-hidden">
-            <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-              <span class="text-2xl fill-slate-300 text-gray-500 px-2">
+          <label className="flex overflow-hidden">
+            <span className="absolute inset-y-0 left-0 flex items-center pl-2">
+              <span className="text-2xl fill-slate-300 text-gray-500 px-2">
                 <BiSearchAlt />
               </span>
             </span>
             <input
-              class="placeholder:text-slate-400 block bg-white w-full border border-gray-400 rounded-full py-3 pl-12 pr-3 shadow-sm sm:text-sm"
+              className="placeholder:text-slate-400 block focus:outline-none bg-white w-full border border-gray-400 rounded-full py-3 pl-12 pr-3 shadow-sm text-2xl font-semibold sm:text-sm"
               placeholder="Search for anything..."
               type="text"
               name="search"
