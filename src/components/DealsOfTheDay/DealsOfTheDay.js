@@ -4,6 +4,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import ProductSlider from '../ProductSlider/ProductSlider';
 
 const DealsOfTheDay = () => {
+  const dealsOfTheDay = Array.apply(null, Array(15));
     return (
         <section>
             <div className='flex justify-between'>
@@ -23,7 +24,11 @@ const DealsOfTheDay = () => {
                 {/* {
                    Array.apply(null, Array(5)).map((arr, index) => <ProductCard key={index}/>)
                 } */}
-                <ProductSlider/>
+                <ProductSlider 
+                products={dealsOfTheDay}
+                limit={5}
+                >
+                </ProductSlider>
             </div>
         </section>
     );

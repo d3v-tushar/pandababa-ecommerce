@@ -8,25 +8,25 @@ import "swiper/css";
 import 'swiper/css/navigation';
 import ProductCard from '../ProductCard/ProductCard';
 
-const ProductSlider = () => {
+const ProductSlider = ({products, limit}) => {
+  console.log(products, limit);
     return (
         <Swiper
         modules={[Navigation]}
         navigation={true}
         spaceBetween={15}
-        slidesPerView={5}
+        slidesPerView={limit}
         className="mySwiper"
       >
-        {/* {
-            Array.apply(null, Array(5)).map((arr, index) => <SwiperSlide key={index}><ProductCard/></SwiperSlide>)
-        } */}
-        <SwiperSlide><ProductCard/></SwiperSlide>
-        <SwiperSlide><ProductCard/></SwiperSlide>
-        <SwiperSlide><ProductCard/></SwiperSlide>
-        <SwiperSlide><ProductCard/></SwiperSlide>
-        <SwiperSlide><ProductCard/></SwiperSlide>
-        <SwiperSlide><ProductCard/></SwiperSlide>
-        <SwiperSlide><ProductCard/></SwiperSlide>
+        {
+          products.map((product, index) => 
+          <div>
+            <SwiperSlide>
+              <ProductCard/>
+            </SwiperSlide>
+          </div>
+          )
+        }
       </Swiper>
     );
 };

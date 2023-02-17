@@ -1,6 +1,6 @@
 import React from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import bannerimg from "../../assets/banner/banner-15.jpg";
+// import bannerimg from "../../assets/banner/banner-15.jpg";
 import bannerimg2 from "../../assets/banner/banner-16.jpg";
 import bannerimg3 from "../../assets/banner/banner-17.jpg";
 import MainSlider from "../MainSlider/MainSlider";

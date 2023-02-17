@@ -12,7 +12,7 @@ const Navbar = () => {
   const {open, setOpen} = useContext(cartData);
   return (
     <div className="sticky top-0 z-10 bg-white pt-5 pb-3 shadow-sm">
-      <nav className="w-full lg:w-10/12 grid grid-cols-5 justify-between mx-auto align-middle items-center">
+      <nav className="w-full lg:w-11/12 grid grid-cols-5 justify-between mx-auto align-middle items-center">
         <div className="col-span-1">
           <img src={logo} alt="" />
         </div>
@@ -45,7 +45,7 @@ const Navbar = () => {
       </nav>
 
       {/* {Navbar 2nd Row} */}
-      <div className="flex mt-6 justify-between w-full lg:w-10/12 mx-auto">
+      <div className="flex mt-6 justify-between w-full lg:w-11/12 mx-auto">
         {/* <div className="bg-gray-100 rounded-md">
             <div className="flex text-lg justify-between items-baseline">
               <p className="flex items-center">
