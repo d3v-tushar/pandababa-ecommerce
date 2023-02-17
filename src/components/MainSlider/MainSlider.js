@@ -12,13 +12,20 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+// Custom Arrow
+import { BsArrowLeftCircleFill } from "react-icons/bs";
+import { BsArrowRightCircleFill } from "react-icons/bs";
 
 const MainSlider = () => {
     return (
     <Swiper
       modules={[Autoplay, Pagination, Navigation]}
       slidesPerView={1}
-      navigation={true}
+      navigation={{
+        nextEl: ".button-next",
+        prevEl: ".button-prev",
+      }}
+      loop={true}
       autoplay={{
         delay: 5000,
         disableOnInteraction: true,
@@ -69,6 +76,8 @@ const MainSlider = () => {
           </div>
         </>
       </SwiperSlide>
+      <button className='button-next text-5xl text-gray-600'><BsArrowRightCircleFill/></button>
+      <button className='button-prev text-5xl text-gray-600'><BsArrowLeftCircleFill/></button>
     </Swiper>
     );
 };

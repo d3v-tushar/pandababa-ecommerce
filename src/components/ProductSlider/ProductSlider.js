@@ -7,13 +7,20 @@ import { Navigation } from 'swiper';
 import "swiper/css";
 import 'swiper/css/navigation';
 import ProductCard from '../ProductCard/ProductCard';
+// Custom Arrow
+import { BsArrowLeftCircleFill } from "react-icons/bs";
+import { BsArrowRightCircleFill } from "react-icons/bs";
 
 const ProductSlider = ({products, limit}) => {
   console.log(products, limit);
     return (
         <Swiper
         modules={[Navigation]}
-        navigation={true}
+        navigation={{
+          nextEl: ".button-next",
+          prevEl: ".button-prev",
+        }}
+        loop={true}
         spaceBetween={15}
         slidesPerView={limit}
         className="mySwiper"
@@ -27,6 +34,8 @@ const ProductSlider = ({products, limit}) => {
           </div>
           )
         }
+      <button className='button-next text-3xl text-gray-700'><BsArrowRightCircleFill/></button>
+      <button className='button-prev text-3xl text-gray-700'><BsArrowLeftCircleFill/></button>
       </Swiper>
     );
 };

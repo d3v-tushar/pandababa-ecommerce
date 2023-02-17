@@ -27,7 +27,7 @@ const Electronic = () => {
                 </p>
               </a>
             </div>
-            <div className='col-span-3 flex items-stretch'>
+            <div className='col-span-3'>
                 <ProductSlider
                 products={electronics}
                 limit={4}

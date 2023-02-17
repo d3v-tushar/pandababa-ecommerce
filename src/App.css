@@ -54,3 +54,21 @@
   background-size: 100% 2px;
   background-position: 0 100%
 }
+
+.button-prev {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translatey(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.button-next {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translatey(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
