@@ -5,7 +5,7 @@ import ProductSlider from '../ProductSlider/ProductSlider';
 const Electronic = () => {
     const electronics = Array.apply(null, Array(10));
     return (
-        <section className='grid grid-cols-4 gap-x-6 my-6'>
+        <section className='grid grid-cols-4 gap-x-6 my-6 rounded-sm'>
             <div className='col-span-1 text-left bg-white px-8 py-4'>
                 <h3 className='text-lg font-bold text-gray-700'>Electronic</h3>
                 <ul className='list-none text-sm py-2 mb-2 leading-6'>
