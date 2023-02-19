@@ -7,9 +7,9 @@ const CtaTwo = () => {
     <section className="grid grid-cols-3">
       <div className="relative">
         <img src={skiCloths} alt="" />
-        <div className="absolute">
+        <div className="absolute top-0 left-8 text-left">
           <h3>NEW ARRIVALS</h3>
-          <h1>SKI CLOTHES SALE Up to 35% Off</h1>
+          <h1 className="my-4">SKI CLOTHES SALE <br /> Up to 35% Off</h1>
           <a className="text-sm font-semibold" href="/market-2#">
             <p className="flex items-center text-left">
               <span className="text-md  link link-underline link-underline-black text-black">

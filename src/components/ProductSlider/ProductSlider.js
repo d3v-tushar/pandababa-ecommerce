@@ -34,8 +34,8 @@ const ProductSlider = ({products, limit}) => {
           </div>
           )
         }
-      <button className='button-next text-3xl text-gray-700'><BsArrowRightCircleFill/></button>
-      <button className='button-prev text-3xl text-gray-700'><BsArrowLeftCircleFill/></button>
+      <button className='button-next text-3xl text-gray-700 hover:opacity-75 opacity-50'><BsArrowRightCircleFill/></button>
+      <button className='button-prev text-3xl text-gray-700 hover:opacity-75 opacity-50'><BsArrowLeftCircleFill/></button>
       </Swiper>
     );
 };

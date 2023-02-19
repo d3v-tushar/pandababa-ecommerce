@@ -76,8 +76,8 @@ const MainSlider = () => {
           </div>
         </>
       </SwiperSlide>
-      <button className='button-next text-5xl text-gray-600'><BsArrowRightCircleFill/></button>
-      <button className='button-prev text-5xl text-gray-600'><BsArrowLeftCircleFill/></button>
+      <button className='button-next text-5xl text-gray-600 hover:opacity-75 opacity-50'><BsArrowRightCircleFill/></button>
+      <button className='button-prev text-5xl text-gray-600 hover:opacity-75 opacity-50'><BsArrowLeftCircleFill/></button>
     </Swiper>
     );
 };
