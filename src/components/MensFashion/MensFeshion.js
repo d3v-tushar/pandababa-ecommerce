@@ -2,12 +2,12 @@ import React from 'react';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import ProductSlider from '../ProductSlider/ProductSlider';
 
-const Electronic = () => {
+const MensFeshion = () => {
     const electronics = Array.apply(null, Array(10));
     return (
         <section className='grid grid-cols-4 gap-x-6 my-6 rounded-sm'>
             <div className='col-span-1 text-left bg-white px-8 py-4'>
-                <h3 className='text-[20px] font-bold text-gray-700'>Electronic</h3>
+                <h3 className='text-[20px] font-bold text-gray-700'>Men's Fashion</h3>
                 <ul className='list-none py-2 mb-2 leading-6'>
                     <li className='pt-2.5 hover:text-red-500 text-[13px] font-semibold cursor-pointer'>Wireless Speaker</li>
                     <li className='pt-2.5 hover:text-red-500 text-[13px] font-semibold cursor-pointer'>Tablet</li>
@@ -37,4 +37,4 @@ const Electronic = () => {
     );
 };
 
-export default Electronic;
+export default MensFeshion;

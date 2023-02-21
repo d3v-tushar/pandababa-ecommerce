@@ -11,7 +11,7 @@ import CategoryDropDown from "../CategoryDropDown/CategoryDropDown";
 const Navbar = () => {
   const {open, setOpen} = useContext(cartData);
   return (
-    <div className="sticky top-0 z-10 bg-white pt-5 pb-3 shadow-sm">
+    <div className="z-10 sticky top-0 bg-white pt-5 pb-3 shadow-sm">
       <nav className="w-full lg:w-11/12 grid grid-cols-5 justify-between mx-auto align-middle items-center">
         <div className="col-span-1">
           <img src={logo} alt="" />

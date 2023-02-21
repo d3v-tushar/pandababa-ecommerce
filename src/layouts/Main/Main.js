@@ -5,8 +5,9 @@ import Navbar from '../../components/Navbar/Navbar';
 
 export const cartData = createContext();
 const Main = () => {
+    const [quickPreview, setQuickPreview] = useState(false);
     const [open, setOpen] = useState(false);
-    const data = {open, setOpen}
+    const data = {open, setOpen, quickPreview, setQuickPreview}
     return (
         <cartData.Provider value={data}>
             <div className='bg-gray-100 min-h-screen relative'>
