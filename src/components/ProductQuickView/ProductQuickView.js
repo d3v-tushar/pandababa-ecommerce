@@ -2,6 +2,8 @@ import { Fragment, useState } from 'react'
 import { Dialog, RadioGroup, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { StarIcon } from '@heroicons/react/20/solid'
+import { useContext } from 'react'
+import { cartData } from '../../layouts/Main/Main'
 
 const product = {
   name: 'Basic Tee 6-Pack ',
@@ -33,12 +35,13 @@ function classNames(...classes) {
 }
 
 function ProductQuickView({open, setOpen}) {
-  const [selectedColor, setSelectedColor] = useState(product.colors[0])
-  const [selectedSize, setSelectedSize] = useState(product.sizes[2])
+  const [selectedColor, setSelectedColor] = useState(product.colors[0]);
+  const [selectedSize, setSelectedSize] = useState(product.sizes[2]);
+  const { quickPreview, setQuickPreview } = useContext(cartData);
 
   return (
-    <Transition.Root show={open} as={Fragment}>
-      <Dialog as="div" className="relative z-10" onClose={setOpen}>
+    <Transition.Root show={quickPreview} as={Fragment}>
+      <Dialog as="div" className="relative z-10" onClose={setQuickPreview}>
         <Transition.Child
           as={Fragment}
           enter="ease-out duration-300"
@@ -67,7 +70,7 @@ function ProductQuickView({open, setOpen}) {
                   <button
                     type="button"
                     className="absolute top-4 right-4 text-gray-400 hover:text-gray-500 sm:top-8 sm:right-6 md:top-6 md:right-6 lg:top-8 lg:right-8"
-                    onClick={() => setOpen(false)}
+                    onClick={() => setQuickPreview(false)}
                   >
                     <span className="sr-only">Close</span>
                     <XMarkIcon className="h-6 w-6" aria-hidden="true" />
