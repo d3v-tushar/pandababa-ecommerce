@@ -34,11 +34,11 @@ const Navbar = () => {
             </button>
           </label>
         </div>
-        <div className="col-span-1 flex justify-end">
-          <button className="text-2xl p-2 m-1 bg-gray-100 rounded-full">
+        <div className="col-span-1 flex justify-end text-gray-500">
+          <button className="text-2xl p-2 mx-1.5 bg-gray-100 rounded-full">
             <CgProfile />
           </button>
-          <button onClick={() => setOpen(!open)} className="text-2xl p-2 m-1 bg-gray-100 rounded-full">
+          <button onClick={() => setOpen(!open)} className="text-2xl p-2 mx-1.5 bg-gray-100 rounded-full">
             <HiOutlineShoppingBag />
           </button>
         </div>

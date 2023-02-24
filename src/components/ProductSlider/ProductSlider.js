@@ -8,8 +8,7 @@ import "swiper/css";
 import 'swiper/css/navigation';
 import ProductCard from '../ProductCard/ProductCard';
 // Custom Arrow
-import { BsArrowLeftCircleFill } from "react-icons/bs";
-import { BsArrowRightCircleFill } from "react-icons/bs";
+import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from 'react-icons/io';
 
 const ProductSlider = ({products, limit}) => {
   console.log(products, limit);
@@ -34,8 +33,8 @@ const ProductSlider = ({products, limit}) => {
           </div>
           )
         }
-      <button className='button-next text-3xl text-gray-700 hover:opacity-75 opacity-50'><BsArrowRightCircleFill/></button>
-      <button className='button-prev text-3xl text-gray-700 hover:opacity-75 opacity-50'><BsArrowLeftCircleFill/></button>
+      <button className='button-next right-1 text-5xl text-gray-600 hover:opacity-100 opacity-50'><IoIosArrowDroprightCircle/></button>
+      <button className='button-prev left-1 text-5xl text-gray-600 hover:opacity-100 opacity-50'><IoIosArrowDropleftCircle/></button>
       </Swiper>
     );
 };

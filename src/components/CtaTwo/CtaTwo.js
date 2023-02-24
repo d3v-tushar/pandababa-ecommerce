@@ -7,8 +7,8 @@ import bagsCTA from "../../assets/banner/banner-20.jpg";
 const CtaTwo = () => {
   return (
     <section className="grid grid-cols-3 gap-6 my-8">
-      <div className="relative overflow-hidden">
-        <img src={skiCTA} alt="" />
+      <div className="relative overflow-hidden rounded">
+        <img className="w-full" src={skiCTA} alt="" />
         <div className="absolute top-0 left-8 text-left h-full flex flex-col justify-center">
           <h3 className="text-sm font-light">NEW ARRIVALS</h3>
           <h1 className="my-4 text-xl font-semibold">
@@ -27,8 +27,8 @@ const CtaTwo = () => {
         </div>
       </div>
 
-      <div className="relative overflow-hidden">
-        <img src={sunglassCTA} alt="" />
+      <div className="relative overflow-hidden rounded">
+        <img className="w-full" src={sunglassCTA} alt="" />
         <div className="absolute top-0 left-8 text-left h-full flex flex-col justify-center text-white">
           <h3 className="text-sm font-light">BEST SELLER</h3>
           <h1 className="my-4 text-xl font-semibold">
@@ -47,8 +47,8 @@ const CtaTwo = () => {
         </div>
       </div>
 
-      <div className="relative overflow-hidden">
-        <img src={bagsCTA} alt="" />
+      <div className="relative overflow-hidden rounded">
+        <img className="w-full" src={bagsCTA} alt="" />
         <div className="absolute top-0 left-8 text-left h-full flex flex-col justify-center">
           <h3 className="text-sm font-light">NEW ARRIVALS</h3>
           <h1 className="my-4 text-xl font-semibold">

@@ -32,7 +32,7 @@ const MainBanner = () => {
         </div>
         <div className="col-span-1 grid grid-cols-1 gap-y-4 items-stretch pl-4">
           <div className="relative w-full flex items-stretch shadow-sm">
-            <img className="w-fit" src={bannerimg3} alt="" />
+            <img className="w-full" src={bannerimg3} alt="" />
             <div className="absolute top-[25%] left-8 text-left">
               <p className="text-sm font-normal">NEW ARRIVALS</p>
               <h4 className="text-xl font-semibold">

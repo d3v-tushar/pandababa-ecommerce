@@ -13,8 +13,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 // Custom Arrow
-import { BsArrowLeftCircleFill } from "react-icons/bs";
-import { BsArrowRightCircleFill } from "react-icons/bs";
+import { IoIosArrowDroprightCircle } from "react-icons/io";
+import { IoIosArrowDropleftCircle } from "react-icons/io";
 
 const MainSlider = () => {
     return (
@@ -76,8 +76,8 @@ const MainSlider = () => {
           </div>
         </>
       </SwiperSlide>
-      <button className='button-next text-5xl text-gray-600 hover:opacity-75 opacity-50'><BsArrowRightCircleFill/></button>
-      <button className='button-prev text-5xl text-gray-600 hover:opacity-75 opacity-50'><BsArrowLeftCircleFill/></button>
+      <button className='button-next right-2 text-5xl text-gray-600 hover:opacity-100 opacity-50'><IoIosArrowDroprightCircle/></button>
+      <button className='button-prev left-2 text-5xl text-gray-600 hover:opacity-100 opacity-50'><IoIosArrowDropleftCircle/></button>
     </Swiper>
     );
 };
