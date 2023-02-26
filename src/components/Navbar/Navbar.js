@@ -4,12 +4,13 @@ import { BiSearchAlt } from "react-icons/bi";
 import { CgProfile } from "react-icons/cg";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import { IoIosArrowDown } from "react-icons/io";
-// import { BiCategory } from "react-icons/bi";
 import { cartData } from "../../layouts/Main/Main";
 import CategoryDropDown from "../CategoryDropDown/CategoryDropDown";
+import MegaMenuItems from "../DropdownItems/MegaMenuItems/MegaMenuItems";
+import UserAccount from "../DropdownItems/MegaMenuItems/UserAccount";
 
 const Navbar = () => {
-  const {open, setOpen} = useContext(cartData);
+  const { open, setOpen } = useContext(cartData);
   return (
     <div className="z-10 sticky top-0 bg-white pt-5 pb-3 shadow-sm">
       <nav className="w-full lg:w-11/12 grid grid-cols-5 justify-between mx-auto align-middle items-center">
@@ -38,7 +39,10 @@ const Navbar = () => {
           <button className="text-2xl p-2 mx-1.5 bg-gray-100 rounded-full">
             <CgProfile />
           </button>
-          <button onClick={() => setOpen(!open)} className="text-2xl p-2 mx-1.5 bg-gray-100 rounded-full">
+          <button
+            onClick={() => setOpen(!open)}
+            className="text-2xl p-2 mx-1.5 bg-gray-100 rounded-full"
+          >
             <HiOutlineShoppingBag />
           </button>
         </div>
@@ -46,65 +50,100 @@ const Navbar = () => {
 
       {/* {Navbar 2nd Row} */}
       <div className="flex mt-6 justify-between w-full lg:w-11/12 mx-auto">
-        {/* <div className="bg-gray-100 rounded-md">
-            <div className="flex text-lg justify-between items-baseline">
-              <p className="flex items-center">
-              <span className="mx-1"><BiCategory/></span>
-              <span className="mx-1">Categories</span>
-              </p>
-              <span className="ml-8 mr-1 mt-2"><IoIosArrowDown/></span>
-            </div>
-        </div> */}
-       <div> <CategoryDropDown/></div>
-        <div className="flex justify-evenly">
-            <button className="mx-4">
-              <p className="flex justify-center items-center">
-                  <span>Home</span>
-                  <span className="mt-3 mb-2 ml-2 text-sm">
-                    <IoIosArrowDown />
-                  </span>
-              </p>
-            </button>
-            <button className="mx-4">
-            <p className="flex justify-center items-center">
-                  <span>Mega Menu</span>
-                  <span className="mt-3 mb-2 ml-2 text-sm">
-                    <IoIosArrowDown />
-                  </span>
-              </p>
-            </button>
-            <button className="mx-4">
-            <p className="flex justify-center items-center">
-                  <span>Full Screen View</span>
-                  <span className="mt-3 mb-2 ml-2 text-sm">
-                    <IoIosArrowDown />
-                  </span>
-              </p>
-            </button>
-            <button className="mx-4">
-            <p className="flex justify-center items-center">
-                  <span>Pages</span>
-                  <span className="mt-3 mb-2 ml-2 text-sm">
-                    <IoIosArrowDown />
-                  </span>
-              </p>
-            </button>
-            <button className="mx-4">
-            <p className="flex justify-center items-center">
-                  <span>User Account</span>
-                  <span className="mt-3 mb-2 ml-2 text-sm">
-                    <IoIosArrowDown />
-                  </span>
-              </p>
-            </button>
-            <button className="ml-4">
-            <p className="flex justify-center items-center">
-                  <span>Vendor Account</span>
-                  <span className="mt-3 mb-2 ml-2 text-sm">
-                    <IoIosArrowDown />
-                  </span>
-              </p>
-            </button>
+        <div>
+          <CategoryDropDown />
+        </div>
+
+        <div>
+          <ul className="flex gap-4 justify-evenly text-gray-800">
+            <li>
+              <button className="flex gap-1 items-center px-2 hover:text-red-700">
+                <span>Home</span>
+              </button>
+            </li>
+
+            <li className="relative group/megamenu">
+              <button className="flex gap-1 items-center px-2 group-hover/megamenu:text-red-700">
+                <span>Mega Menu</span>
+                <svg
+                  className="h-5 w-5 mt-1 group-hover/megamenu:rotate-180 transition duration-300 ease-in-out"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+
+              <MegaMenuItems />
+            </li>
+
+            <li className="group/electronics">
+              <button className="flex gap-1 items-center px-2 hover:text-red-700">
+                <span>Electronics</span>
+                <svg
+                  className="h-5 w-5 mt-1 group-hover/electronics:rotate-180 transition duration-300 ease-in-out"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </li>
+
+            <li className="group/grocery">
+              <button className="flex gap-1 items-center px-2 hover:text-red-700">
+                <span>Grocery</span>
+                <svg
+                  className="h-5 w-5 mt-1 group-hover/grocery:rotate-180 transition duration-300 ease-in-out"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </li>
+
+            <li className="relative group/user">
+              <button className="flex gap-1 items-center px-2 group-hover/user:text-red-700">
+                <span>User Account</span>
+                <svg
+                  className="h-5 w-5 mt-1 group-hover/user:rotate-180 transition duration-300 ease-in-out"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+
+              <UserAccount />
+            </li>
+
+            <li>
+              <button className="flex gap-1 items-center px-2 hover:text-red-700">
+                <span>Dashboard</span>
+              </button>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
