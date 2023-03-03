@@ -2,6 +2,7 @@ import React from 'react';
 import Cart from '../../components/Cart/Cart';
 import Categories from '../../components/Categories/Categories';
 import CtaFour from '../../components/CtaFour/CtaFour';
+import CtaOne from '../../components/CtaOne/CtaOne';
 import CtaThree from '../../components/CtaThree/CtaThree';
 import CtaTwo from '../../components/CtaTwo/CtaTwo';
 import DealsOfTheDay from '../../components/DealsOfTheDay/DealsOfTheDay';
@@ -17,6 +18,7 @@ const Home = ({open, setOpen}) => {
             <MainBanner/>
             <Features/>
             <Categories/>
+            <CtaOne/>
             <DealsOfTheDay/>
             <CtaTwo/>
             <ProductsFromCategory categoryName={"Electronic"}/>

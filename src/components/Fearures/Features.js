@@ -31,7 +31,7 @@ const Features = () => {
             <div className='flex justify-center items-center'>
                 <div className='text-[40px] mx-4'><GoCreditCard/></div>
                 <div className='text-left leading-5 mb-2'>
-                    <h3 className='text-lg font-semibold '>Payment Gateway</h3>
+                    <h3 className='text-lg font-semibold '>Easy Payment</h3>
                     <p className='text-md text-gray-500'>Secure system</p>
                 </div>
             </div>

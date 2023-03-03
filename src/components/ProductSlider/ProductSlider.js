@@ -11,7 +11,6 @@ import ProductCard from '../ProductCard/ProductCard';
 import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from 'react-icons/io';
 
 const ProductSlider = ({products, limit}) => {
-  console.log(products, limit);
     return (
         <Swiper
         modules={[Navigation]}
