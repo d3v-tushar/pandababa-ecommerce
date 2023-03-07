@@ -27,7 +27,7 @@ const ProductsFromCategory = ({categoryName}) => {
                 </p>
               </a>
             </div>
-            <div className='col-span-3'>
+            <div className='col-span-3 flex items-stretch'>
                 <ProductSlider
                 products={electronics}
                 limit={4}
